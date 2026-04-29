@@ -1,0 +1,470 @@
+/* =============================================
+   CAYASTÁ PREMIUM — cabanas.css
+   Estilos específicos para la página de cabañas
+   ============================================= */
+
+/* ---------- NAV SOLID (siempre oscura en esta página) ---------- */
+.nav--solid {
+  background: var(--charcoal) !important;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.2);
+}
+.nav--solid .nav__logo,
+.nav--solid .nav__links a {
+  color: rgba(255,255,255,0.85);
+}
+.nav--solid .nav__logo span { color: var(--teal-light); }
+.nav--solid .nav__burger span { background: var(--white); }
+.nav__link--active {
+  color: var(--teal-light) !important;
+  border-bottom: 1px solid var(--teal-light);
+  padding-bottom: 2px;
+}
+
+/* ---------- PAGE HERO ---------- */
+.page-hero {
+  position: relative;
+  height: 380px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+}
+.page-hero__bg {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to top, rgba(10,25,25,0.85) 0%, rgba(10,25,25,0.3) 60%, transparent 100%),
+    url('https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?w=1400&q=80') center/cover no-repeat;
+}
+.page-hero__content {
+  position: relative;
+  z-index: 2;
+  padding-bottom: 48px;
+}
+.page-hero__content .label { color: var(--teal-light); }
+.page-hero__content h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
+  font-weight: 300;
+  color: var(--white);
+  margin-bottom: 10px;
+}
+.page-hero__content p {
+  color: rgba(255,255,255,0.75);
+  font-size: 1rem;
+  max-width: 500px;
+}
+
+/* ---------- BREADCRUMB ---------- */
+.breadcrumb {
+  background: var(--charcoal);
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.breadcrumb .container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.45);
+}
+.breadcrumb a {
+  color: rgba(255,255,255,0.55);
+  transition: color var(--transition);
+}
+.breadcrumb a:hover { color: var(--teal-light); }
+.breadcrumb span:last-child { color: var(--teal-light); }
+
+/* ---------- TOPBAR ---------- */
+.cabanas-main { padding: 60px 0 80px; background: var(--white); }
+.cabanas-topbar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+.cabanas-count {
+  font-size: 0.85rem;
+  color: var(--light);
+  font-weight: 500;
+}
+.badge {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 50px;
+  letter-spacing: 0.04em;
+}
+.badge--green { background: #e6f7ef; color: #1a7a4a; }
+
+/* ---------- CABIN ARTICLE ---------- */
+.cabin {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: start;
+  margin-bottom: 24px;
+}
+.cabin--reverse .cabin__gallery { order: 2; }
+.cabin--reverse .cabin__info   { order: 1; }
+
+.cabin-divider {
+  height: 1px;
+  background: var(--sand-dark);
+  margin: 60px 0;
+}
+
+/* GALLERY */
+.cabin__gallery { display: flex; flex-direction: column; gap: 12px; position: sticky; top: 90px; }
+.cabin__img-main {
+  width: 100%;
+  height: 340px;
+  border-radius: var(--radius);
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.4s ease;
+}
+.cabin__img-main:hover { transform: scale(1.02); }
+.cabin__img--rio    { background-image: url('https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=900&q=80'); }
+.cabin__img--bosque { background-image: url('https://images.unsplash.com/photo-1475070929565-c985b496cb9f?w=900&q=80'); }
+
+.cabin__img-thumbs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.cabin__thumb {
+  height: 90px;
+  border-radius: var(--radius-sm);
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  transition: opacity var(--transition), transform var(--transition);
+  opacity: 0.8;
+}
+.cabin__thumb:hover { opacity: 1; transform: scale(1.03); }
+
+.cabin__thumb--rio1 { background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=300&q=80'); }
+.cabin__thumb--rio2 { background-image: url('https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=300&q=80'); }
+.cabin__thumb--rio3 { background-image: url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=300&q=80'); }
+.cabin__thumb--bosque1 { background-image: url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=300&q=80'); }
+.cabin__thumb--bosque2 { background-image: url('https://imgs.search.brave.com/7N1tRkGCb6P4aSqsHRlRXKvqndb2a-aFsc3VQOuxDT0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jYWJh/bmFzYW5kaW5hcy5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MjQvMDMvZ3YwNS1j/YWJhbmFzLmpwZw'); }
+.cabin__thumb--bosque3 { background-image: url('https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=300&q=80'); }
+
+/* INFO */
+.cabin__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+.cabin__name {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 400;
+  margin-bottom: 6px;
+}
+.cabin__rating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.82rem;
+}
+.stars { color: #f0a500; }
+.rating-num { font-weight: 600; color: var(--charcoal); }
+.rating-count { color: var(--light); }
+
+.cabin__price-box {
+  text-align: right;
+  flex-shrink: 0;
+  background: var(--teal-light);
+  padding: 14px 20px;
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--teal);
+}
+.cabin__price {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--teal-dark);
+  line-height: 1;
+}
+.cabin__price-label {
+  font-size: 0.78rem;
+  color: var(--teal);
+  font-weight: 500;
+}
+.cabin__price-note {
+  font-size: 0.7rem;
+  color: var(--teal);
+  margin-top: 4px;
+}
+
+.cabin__desc {
+  font-size: 0.92rem;
+  line-height: 1.8;
+  color: var(--mid);
+  margin-bottom: 28px;
+  border-left: 2px solid var(--sand-dark);
+  padding-left: 16px;
+}
+
+/* FEATURES */
+.cabin__features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 28px;
+  padding: 20px;
+  background: var(--section-alt);
+  border-radius: var(--radius-sm);
+}
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 6px;
+}
+.feature__icon { font-size: 1.4rem; }
+.feature__val {
+  display: block;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--charcoal);
+}
+.feature__key {
+  display: block;
+  font-size: 0.7rem;
+  color: var(--light);
+}
+
+/* AMENITIES */
+.cabin__amenities { margin-bottom: 24px; }
+.cabin__amenities h4 {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--charcoal);
+  margin-bottom: 12px;
+}
+.amenities-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px 16px;
+  list-style: none;
+  font-size: 0.83rem;
+  color: var(--mid);
+}
+.amenities-grid li { padding: 4px 0; border-bottom: 1px solid var(--sand-dark); }
+
+/* POLICIES */
+.cabin__policies {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+  padding: 16px 20px;
+  border: 1px solid var(--sand-dark);
+  border-radius: var(--radius-sm);
+  background: var(--white);
+}
+.policy {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8rem;
+  flex: 1;
+  min-width: 100px;
+}
+.policy__icon { font-size: 1.2rem; }
+.policy strong { display: block; color: var(--charcoal); font-size: 0.78rem; }
+.policy span { color: var(--light); font-size: 0.75rem; }
+
+.cabin__cta { width: 100%; text-align: center; padding: 15px; font-size: 0.9rem; }
+
+/* ---------- COMPARE TABLE ---------- */
+.compare {
+  padding: 80px 0;
+  background: var(--charcoal);
+}
+.compare h2 { color: var(--white); margin-bottom: 8px; }
+.compare__sub { color: rgba(255,255,255,0.5); margin-bottom: 40px; font-size: 0.9rem; }
+.compare__table-wrap { overflow-x: auto; }
+
+.compare__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+.compare__table th, .compare__table td {
+  padding: 14px 20px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.compare__table th {
+  background: rgba(255,255,255,0.04);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.5);
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+}
+.compare__table th:first-child { background: transparent; }
+.compare__table td:first-child { color: rgba(255,255,255,0.5); font-size: 0.8rem; }
+.compare__table td { color: rgba(255,255,255,0.8); }
+.compare__table tr:hover td { background: rgba(255,255,255,0.03); }
+
+.compare__cabin-name {
+  display: block;
+  color: var(--white);
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 4px;
+}
+.compare__cabin-price {
+  display: block;
+  color: var(--teal-light);
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.compare__table .yes    { color: #5dd4a0; font-weight: 600; }
+.compare__table .no     { color: rgba(255,255,255,0.25); }
+.compare__table .partial{ color: #f0c060; }
+
+/* ---------- RESERVA ---------- */
+.reserva {
+  padding: 100px 0;
+  background: var(--sand);
+}
+.reserva__grid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 80px;
+  align-items: start;
+}
+.reserva__text h2 {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  margin-bottom: 1rem;
+  line-height: 1.1;
+}
+.reserva__text .body-text { margin-bottom: 32px; }
+
+.reserva__info { display: flex; flex-direction: column; gap: 18px; }
+.reserva__info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  font-size: 0.88rem;
+}
+.reserva__info-icon { font-size: 1.4rem; flex-shrink: 0; margin-top: 2px; }
+.reserva__info-item strong { display: block; color: var(--charcoal); font-weight: 600; margin-bottom: 2px; }
+.reserva__info-item span, .reserva__info-item a { color: var(--mid); }
+.reserva__info-item a { color: var(--teal); transition: color var(--transition); }
+.reserva__info-item a:hover { color: var(--teal-dark); }
+
+/* FORM */
+.reserva__form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  background: var(--white);
+  padding: 36px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
+}
+.reserva__form input,
+.reserva__form select,
+.reserva__form textarea {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  padding: 13px 16px;
+  border: 1.5px solid var(--sand-dark);
+  border-radius: var(--radius-sm);
+  background: var(--white);
+  color: var(--charcoal);
+  transition: border-color var(--transition), box-shadow var(--transition);
+  outline: none;
+  width: 100%;
+  appearance: none;
+}
+.reserva__form input:focus,
+.reserva__form select:focus,
+.reserva__form textarea:focus {
+  border-color: var(--teal);
+  box-shadow: 0 0 0 3px rgba(45,125,125,0.1);
+}
+.reserva__form select { cursor: pointer; }
+.reserva__form textarea { resize: vertical; }
+
+.form-group { display: flex; flex-direction: column; gap: 6px; }
+.form-label { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--light); }
+
+/* SUMMARY */
+.reserva__summary {
+  background: var(--teal-light);
+  border: 1.5px solid var(--teal);
+  border-radius: var(--radius-sm);
+  padding: 16px 18px;
+}
+.summary__row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.88rem;
+  color: var(--mid);
+  padding: 4px 0;
+}
+.summary__row--total {
+  border-top: 1px solid rgba(45,125,125,0.3);
+  margin-top: 8px;
+  padding-top: 10px;
+  font-size: 1rem;
+  color: var(--teal-dark);
+}
+.summary__note {
+  font-size: 0.7rem;
+  color: var(--teal);
+  margin-top: 8px;
+}
+
+/* =============================================
+   RESPONSIVE — cabanas.css
+   ============================================= */
+
+@media (max-width: 960px) {
+  .cabin {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .cabin--reverse .cabin__gallery,
+  .cabin--reverse .cabin__info { order: unset; }
+  .cabin__gallery { position: static; }
+  .cabin__img-main { height: 280px; }
+
+  .cabin__features { grid-template-columns: repeat(2, 1fr); }
+
+  .reserva__grid { grid-template-columns: 1fr; gap: 48px; }
+}
+
+@media (max-width: 600px) {
+  .page-hero { height: 300px; }
+
+  .cabin__header { flex-direction: column; }
+  .cabin__price-box { text-align: left; align-self: stretch; }
+
+  .cabin__features { grid-template-columns: repeat(2, 1fr); }
+
+  .amenities-grid { grid-template-columns: 1fr; }
+
+  .cabin__policies { flex-direction: column; gap: 10px; }
+
+  .compare__table th, .compare__table td { padding: 10px 12px; font-size: 0.78rem; }
+
+  .reserva__form { padding: 24px 18px; }
+
+  .form-row { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cabañas — Cayastá Premium</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="cabañas.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body class="page-cabanas">
+
+  <!-- NAV (igual que index pero siempre oscura) -->
+  <header class="nav nav--solid">
+    <a href="index.html" class="nav__logo">Cayastá<span>Premium</span></a>
+    <nav class="nav__links">
+      <a href="index.html">Inicio</a>
+      <a href="cabanas.html" class="nav__link--active">Cabañas</a>
+      <a href="index.html#experiencias">Experiencias</a>
+      <a href="index.html#contacto">Contacto</a>
+    </nav>
+    <a href="#reservar" class="btn btn--primary">Ver</a>
+    <button class="nav__burger" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Inicio</a>
+    <a href="cabanas.html">Cabañas</a>
+    <a href="index.html#experiencias">Experiencias</a>
+    <a href="index.html#contacto">Contacto</a>
+    <a href="#reservar" class="btn btn--primary">Reservar</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero__bg"></div>
+    <div class="page-hero__content container">
+      <p class="label">Alojamiento</p>
+      <h1>Nuestras Cabañas</h1>
+      <p>Dos refugios únicos diseñados para el descanso absoluto a orillas del Paraná.</p>
+    </div>
+  </section>
+
+  <!-- BREADCRUMB -->
+  <div class="breadcrumb">
+    <div class="container">
+      <a href="index.html">Inicio</a>
+      <span>/</span>
+      <span>Cabañas</span>
+    </div>
+  </div>
+
+  <!-- CABAÑAS LIST -->
+  <main class="cabanas-main">
+    <div class="container">
+
+      <!-- FILTROS / INFO -->
+      <div class="cabanas-topbar">
+        <p class="cabanas-count">2 cabañas disponibles</p>
+        <div class="cabanas-badges">
+          <span class="badge badge--green">✓ Disponibles este fin de semana</span>
+        </div>
+      </div>
+
+      <!-- ========== CABAÑA 1 ========== -->
+      <article class="cabin" id="cabin-rio">
+        <div class="cabin__gallery">
+          <div class="cabin__img-main cabin__img--rio"></div>
+          <div class="cabin__img-thumbs">
+            <div class="cabin__thumb cabin__thumb--rio1"></div>
+            <div class="cabin__thumb cabin__thumb--rio2"></div>
+            <div class="cabin__thumb cabin__thumb--rio3"></div>
+          </div>
+        </div>
+
+        <div class="cabin__info">
+          <div class="cabin__header">
+            <div>
+              <p class="label">Cabaña Nº 1</p>
+              <h2 class="cabin__name">Cabaña del Río</h2>
+              <div class="cabin__rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-num">4.9</span>
+                <span class="rating-count">(38 huéspedes)</span>
+              </div>
+            </div>
+            <div class="cabin__price-box">
+              <span class="cabin__price">$85.000</span>
+              <span class="cabin__price-label">/ noche</span>
+              <p class="cabin__price-note">Precio para 2 personas</p>
+            </div>
+          </div>
+
+          <p class="cabin__desc">
+            Suspendida sobre el agua, la Cabaña del Río ofrece una experiencia de inmersión total en el paisaje del Paraná. Con amplios ventanales de piso a techo, deck privado con acceso directo al río y una arquitectura que dialoga con el entorno natural, es el alojamiento más solicitado del complejo.
+          </p>
+
+          <div class="cabin__features">
+            <div class="feature">
+              <span class="feature__icon">👥</span>
+              <div>
+                <span class="feature__val">2–4</span>
+                <span class="feature__key">Personas</span>
+              </div>
+            </div>
+            <div class="feature">
+              <span class="feature__icon">🛏️</span>
+              <div>
+                <span class="feature__val">1 suite</span>
+                <span class="feature__key">+ sofá cama</span>
+              </div>
+            </div>
+            <div class="feature">
+              <span class="feature__icon">📐</span>
+              <div>
+                <span class="feature__val">85 m²</span>
+                <span class="feature__key">Superficie</span>
+              </div>
+            </div>
+            <div class="feature">
+              <span class="feature__icon">🌊</span>
+              <div>
+                <span class="feature__val">Vista al río</span>
+                <span class="feature__key">Deck privado</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="cabin__amenities">
+            <h4>Comodidades incluidas</h4>
+            <ul class="amenities-grid">
+              <li>✓ Aire acondicionado + calefacción</li>
+              <li>✓ Cocina equipada completa</li>
+              <li>✓ Smart TV 55"</li>
+              <li>✓ Wi-Fi de alta velocidad</li>
+              <li>✓ Ropa de cama premium</li>
+              <li>✓ Deck con reposeras</li>
+              <li>✓ Parrilla privada</li>
+              <li>✓ Kayaks incluidos</li>
+              <li>✓ Desayuno local</li>
+              <li>✓ Estacionamiento privado</li>
+            </ul>
+          </div>
+
+          <div class="cabin__policies">
+            <div class="policy">
+              <span class="policy__icon">🕑</span>
+              <div>
+                <strong>Check-in</strong>
+                <span>14:00 hs</span>
+              </div>
+            </div>
+            <div class="policy">
+              <span class="policy__icon">🕥</span>
+              <div>
+                <strong>Check-out</strong>
+                <span>10:30 hs</span>
+              </div>
+            </div>
+            <div class="policy">
+              <span class="policy__icon">🐾</span>
+              <div>
+                <strong>Mascotas</strong>
+                <span>Permitidas</span>
+              </div>
+            </div>
+            <div class="policy">
+              <span class="policy__icon">🚭</span>
+              <div>
+                <strong>Fumar</strong>
+                <span>Solo en deck</span>
+              </div>
+            </div>
+          </div>
+
+          <a href="#reservar" class="btn btn--primary cabin__cta" data-cabin="Cabaña del Río">
+            Consultar disponibilidad
+          </a>
+        </div>
+      </article>
+
+      <div class="cabin-divider"></div>
+
+      <!-- ========== CABAÑA 2 ========== -->
+      <article class="cabin cabin--reverse" id="cabin-bosque">
+        <div class="cabin__gallery">
+          <div class="cabin__img-main cabin__img--bosque"></div>
+          <div class="cabin__img-thumbs">
+            <div class="cabin__thumb cabin__thumb--bosque1"></div>
+            <div class="cabin__thumb cabin__thumb--bosque2"></div>
+            <div class="cabin__thumb cabin__thumb--bosque3"></div>
+          </div>
+        </div>
+
+        <div class="cabin__info">
+          <div class="cabin__header">
+            <div>
+              <p class="label">Cabaña Nº 2</p>
+              <h2 class="cabin__name">Cabaña del Bosque</h2>
+              <div class="cabin__rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-num">4.8</span>
+                <span class="rating-count">(25 huéspedes)</span>
+              </div>
+            </div>
+            <div class="cabin__price-box">
+              <span class="cabin__price">$72.000</span>
+              <span class="cabin__price-label">/ noche</span>
+              <p class="cabin__price-note">Precio para 2 personas</p>
+            </div>
+          </div>
+
+          <p class="cabin__desc">
+            Rodeada de espinillos y ceibos centenarios, la Cabaña del Bosque ofrece una intimidad única entre la vegetación autóctona del litoral. Su diseño en madera de quebracho y techo de paja combina tradición regional con confort moderno, creando un refugio cálido en cualquier época del año.
+          </p>
+
+          <div class="cabin__features">
+            <div class="feature">
+              <span class="feature__icon">👥</span>
+              <div>
+                <span class="feature__val">2–5</span>
+                <span class="feature__key">Personas</span>
+              </div>
+            </div>
+            <div class="feature">
+              <span class="feature__icon">🛏️</span>
+              <div>
+                <span class="feature__val">2 cuartos</span>
+                <span class="feature__key">Matrimonial + twin</span>
+              </div>
+            </div>
+            <div class="feature">
+              <span class="feature__icon">📐</span>
+              <div>
+                <span class="feature__val">110 m²</span>
+                <span class="feature__key">Superficie</span>
+              </div>
+            </div>
+            <div class="feature">
+              <span class="feature__icon">🌿</span>
+              <div>
+                <span class="feature__val">Vista al monte</span>
+                <span class="feature__key">Galería techada</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="cabin__amenities">
+            <h4>Comodidades incluidas</h4>
+            <ul class="amenities-grid">
+              <li>✓ Aire acondicionado + calefacción</li>
+              <li>✓ Cocina equipada completa</li>
+              <li>✓ Smart TV 55"</li>
+              <li>✓ Wi-Fi de alta velocidad</li>
+              <li>✓ Ropa de cama premium</li>
+              <li>✓ Galería techada con hamacas</li>
+              <li>✓ Parrilla privada grande</li>
+              <li>✓ Fogón exterior</li>
+              <li>✓ Desayuno local</li>
+              <li>✓ Estacionamiento privado x2</li>
+            </ul>
+          </div>
+
+          <div class="cabin__policies">
+            <div class="policy">
+              <span class="policy__icon">🕑</span>
+              <div>
+                <strong>Check-in</strong>
+                <span>14:00 hs</span>
+              </div>
+            </div>
+            <div class="policy">
+              <span class="policy__icon">🕥</span>
+              <div>
+                <strong>Check-out</strong>
+                <span>10:30 hs</span>
+              </div>
+            </div>
+            <div class="policy">
+              <span class="policy__icon">🐾</span>
+              <div>
+                <strong>Mascotas</strong>
+                <span>Permitidas</span>
+              </div>
+            </div>
+            <div class="policy">
+              <span class="policy__icon">👨‍👩‍👧</span>
+              <div>
+                <strong>Niños</strong>
+                <span>Bienvenidos</span>
+              </div>
+            </div>
+          </div>
+
+          <a href="#reservar" class="btn btn--primary cabin__cta" data-cabin="Cabaña del Bosque">
+            Consultar disponibilidad
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- FORMULARIO DE RESERVA -->
+  <section class="reserva" id="reservar">
+    <div class="container reserva__grid">
+      <div class="reserva__text">
+        <p class="label">Reservas</p>
+        <h2>Consultá<br />disponibilidad</h2>
+        <p class="body-text">Completá el formulario y te respondemos en menos de 24 horas con disponibilidad y opciones de pago.</p>
+
+        <div class="reserva__info">
+          <div class="reserva__info-item">
+            <span class="reserva__info-icon">💳</span>
+            <div>
+              <strong>Seña del 30%</strong>
+              <span>para confirmar la reserva</span>
+            </div>
+          </div>
+          <div class="reserva__info-item">
+            <span class="reserva__info-icon">🔄</span>
+            <div>
+              <strong>Cancelación gratuita</strong>
+              <span>hasta 7 días antes</span>
+            </div>
+          </div>
+          <div class="reserva__info-item">
+            <span class="reserva__info-icon">💬</span>
+            <div>
+              <strong>WhatsApp directo</strong>
+              <a href="https://wa.me/543424627967" target="_blank">+54 342 462-7967</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <form class="reserva__form" id="reservaForm">
+        <div class="form-row">
+          <input type="text" placeholder="Nombre" required />
+          <input type="text" placeholder="Apellido" required />
+        </div>
+        <input type="email" placeholder="Correo electrónico" required />
+        <input type="tel" placeholder="WhatsApp / Teléfono" />
+
+        <div class="form-group">
+          <label class="form-label">Cabaña de interés</label>
+          <select id="cabinSelect">
+            <option value="">— Seleccioná una cabaña —</option>
+            <option value="rio">🌊 Cabaña del Río — $85.000/noche</option>
+            <option value="bosque">🌿 Cabaña del Bosque — $72.000/noche</option>
+            <option value="ambas">Ambas (grupo grande)</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Fecha de llegada</label>
+            <input type="date" id="fechaEntrada" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Fecha de salida</label>
+            <input type="date" id="fechaSalida" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Adultos</label>
+            <select id="adultos">
+              <option>1</option>
+              <option selected>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5+</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Niños</label>
+            <select id="ninos">
+              <option selected>0</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3+</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- RESUMEN DINÁMICO -->
+        <div class="reserva__summary" id="reservaSummary" style="display:none">
+          <div class="summary__row">
+            <span id="summaryNoches">— noches</span>
+            <span id="summaryPrecio">—</span>
+          </div>
+          <div class="summary__row summary__row--total">
+            <strong>Total estimado</strong>
+            <strong id="summaryTotal">—</strong>
+          </div>
+          <p class="summary__note">* Seña del 30% al confirmar. Resto al check-in.</p>
+        </div>
+
+        <textarea placeholder="Comentarios o consultas adicionales (mascotas, celebraciones, etc.)" rows="3"></textarea>
+        <button type="submit" class="btn btn--primary btn--full">Enviar consulta</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER (igual al de index) -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <div class="footer__logo">Cayastá<span>Premium</span></div>
+        <p>Cabañas de lujo en el corazón histórico de Santa Fe.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Instagram">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="#" aria-label="Facebook">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4>Explorar</h4>
+        <a href="index.html">Inicio</a>
+        <a href="cabanas.html">Cabañas</a>
+        <a href="index.html#experiencias">Experiencias</a>
+        <a href="index.html#contacto">Contacto</a>
+      </div>
+      <div class="footer__col">
+        <h4>Contacto</h4>
+        <a href="tel:+543424627967">+54 342 462-7967</a>
+        <a href="mailto:hola@cayastapremium.com">hola@cayastapremium.com</a>
+        <span>87 km de Santa Fe Capital</span>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2025 Cayastá Premium. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu
+    const burger = document.querySelector('.nav__burger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    burger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('is-open');
+      burger.classList.toggle('is-active');
+    });
+
+    // Pre-select cabaña si viene de un CTA
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('cabana')) {
+      document.getElementById('cabinSelect').value = params.get('cabana');
+    }
+
+    // CTA buttons pre-fill select
+    document.querySelectorAll('.cabin__cta').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const name = btn.dataset.cabin;
+        const map = { 'Cabaña del Río': 'rio', 'Cabaña del Bosque': 'bosque' };
+        document.getElementById('cabinSelect').value = map[name] || '';
+        updateSummary();
+      });
+    });
+
+    // Price map
+    const prices = { rio: 85000, bosque: 72000, ambas: 157000 };
+
+    function updateSummary() {
+      const cabin = document.getElementById('cabinSelect').value;
+      const entrada = document.getElementById('fechaEntrada').value;
+      const salida = document.getElementById('fechaSalida').value;
+      const summary = document.getElementById('reservaSummary');
+
+      if (!cabin || !entrada || !salida) { summary.style.display = 'none'; return; }
+
+      const d1 = new Date(entrada), d2 = new Date(salida);
+      const noches = Math.round((d2 - d1) / 86400000);
+      if (noches <= 0) { summary.style.display = 'none'; return; }
+
+      const precio = prices[cabin] || 0;
+      const total = precio * noches;
+      const fmt = n => '$' + n.toLocaleString('es-AR');
+
+      document.getElementById('summaryNoches').textContent = `${fmt(precio)} × ${noches} noche${noches > 1 ? 's' : ''}`;
+      document.getElementById('summaryPrecio').textContent = fmt(total);
+      document.getElementById('summaryTotal').textContent = fmt(total);
+      summary.style.display = 'block';
+    }
+
+    ['cabinSelect','fechaEntrada','fechaSalida'].forEach(id => {
+      document.getElementById(id).addEventListener('change', updateSummary);
+    });
+
+    // Set min date to today
+    const today = new Date().toISOString().split('T')[0];
+    document.getElementById('fechaEntrada').min = today;
+    document.getElementById('fechaSalida').min = today;
+    document.getElementById('fechaEntrada').addEventListener('change', function() {
+      document.getElementById('fechaSalida').min = this.value;
+    });
+
+    // Form submit
+    document.getElementById('reservaForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const btn = this.querySelector('button[type="submit"]');
+      btn.textContent = '✓ Consulta enviada — Te contactamos pronto';
+      btn.style.background = '#2a7a4a';
+      btn.disabled = true;
+    });
+
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('revealed'); observer.unobserve(e.target); } });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.cabin, .compare__table-wrap, .reserva__info-item').forEach(el => {
+      el.classList.add('reveal');
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>
